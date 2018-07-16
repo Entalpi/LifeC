@@ -8,7 +8,7 @@
 #include <ncurses.h>
 
 /* Number of microseconds per tick */
-#define TICK_DELAY 1600000
+#define TICK_DELAY 1000000
 
 /* Contains the application state */
 typedef struct {
