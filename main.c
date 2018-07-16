@@ -1,6 +1,4 @@
-#include <stdbool.h>
 #include <stdint.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <time.h>
@@ -134,10 +132,11 @@ void display_ui(const GameState* game_state, uint32_t w, uint32_t h) {
 
 void init_board(bool* board, uint32_t w, uint32_t h) {
 	// Fill board randomly 
+	const double spawn_prob = 0.2;
 	srand48(time(NULL));
 	for (uint32_t x = 0; x < w; x++) {
 		for (uint32_t y = 0; y < h; y++) {
-			board[idx_at(x, y, w, h)] = (drand48() < 0.2) ? true : false;
+			board[idx_at(x, y, w, h)] = (drand48() < spawn_prob) ? true : false;
 		}
 	}
 }
