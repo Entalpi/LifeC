@@ -92,7 +92,6 @@ bool update_board(bool* curr_iter, bool* next_iter, uint32_t w, uint32_t h) {
 				if (neighbors == 3) {
 					next_iter[idx_at(x, y, w, h)] = true;
 				}
-				continue;
 			}
 
 			// Under population
