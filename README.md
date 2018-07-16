@@ -1,5 +1,20 @@
-# LifeC
-Game of Life implemented in the terminal.
+# LifeC (a.k.a Game of Life, Conway's Game of Life)
+The classic Game of Life implemented in the terminal.
+
+![](gameplay.gif)
+
+# How to build
+Simply run:
+```shell
+make
+```
+
+# How to run
+On UNIX-like operating systems use;
+```shell
+./lifec
+```
+Not tested on Windows.
 
 # License
 The MIT License (MIT) Copyright (c) 2018 Alexander Lingtorp
